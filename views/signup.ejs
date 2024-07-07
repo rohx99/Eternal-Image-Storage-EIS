@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/stylesheets/signup.css">
+</head>
+<body>
+    <form action="/signup" method="post">
+        <div class="container">
+            <div class="box">
+            <h1>Sign Up</h1>
+            <div class="user">
+                <i class="fas fa-user"></i>
+                <input type="text" name="fullname" id="username" placeholder="Full Name">
+                <i class="fas fa-envelope"></i>
+                <input type="text" name="username" id="email" placeholder="Username">
+                <i class="fas fa-unlock-alt"></i>
+                <input type="text" name="email" id="password" placeholder="E-mail">
+                <i class="fas fa-unlock-alt"></i>
+                <input type="password" name="password" id="confirm-password" placeholder="Password">
+            </div>
+            <div class="login-btn">
+                <input type="submit" class="btn" value="Submit">
+                <p class="signup">Already have an account ? <a href="/login"><span>Log In</span> </a></p>
+            </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

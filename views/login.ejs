@@ -1,0 +1,70 @@
+<html lang="en" class="plt-tablet plt-desktop md hydrated" mode="md"><head>
+    <meta charset="UTF-8"><style data-styles="">slot-fb{display:contents}slot-fb[hidden]{display:none}ion-menu-button,ion-menu,ion-menu-toggle,ion-input-password-toggle,ion-fab-button,ion-fab,ion-fab-list,ion-refresher-content,ion-refresher,ion-back-button,ion-toast,ion-card,ion-card-content,ion-card-header,ion-card-subtitle,ion-card-title,ion-item-option,ion-item-options,ion-item-sliding,ion-accordion,ion-accordion-group,ion-infinite-scroll-content,ion-infinite-scroll,ion-reorder,ion-reorder-group,ion-segment-button,ion-segment,ion-tab-button,ion-tab-bar,ion-chip,ion-datetime-button,ion-input,ion-searchbar,ion-toggle,ion-nav,ion-nav-link,ion-textarea,ion-backdrop,ion-loading,ion-breadcrumb,ion-breadcrumbs,ion-modal,ion-route,ion-route-redirect,ion-router,ion-router-link,ion-avatar,ion-badge,ion-thumbnail,ion-col,ion-grid,ion-row,ion-tab,ion-tabs,ion-img,ion-progress-bar,ion-range,ion-split-pane,ion-text,ion-select,ion-select-option,ion-select-popover,ion-picker,ion-picker-column,ion-datetime,ion-picker-legacy,ion-picker-legacy-column,ion-radio,ion-radio-group,ion-ripple-effect,ion-button,ion-icon,ion-action-sheet,ion-alert,ion-app,ion-content,ion-footer,ion-header,ion-router-outlet,ion-title,ion-toolbar,ion-buttons,ion-picker-column-option,ion-popover,ion-checkbox,ion-spinner,ion-item-divider,ion-item-group,ion-note,ion-skeleton-text,ion-item,ion-label,ion-list,ion-list-header{visibility:hidden}.hydrated{visibility:inherit}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Here</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://startbootstrap.com/templates/agency/font-awesome-4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+  </head>
+  
+  <body id="page-top" class="index" data-pinterest-extension-installed="cr1.3.4">
+  
+      <label class="dayNight">
+        <input type="checkbox">
+        <div></div>
+      </label>
+      <div class="box">
+  
+        <form action="/login" method="post">
+  
+          <h2>Login Here</h2>
+
+          <% if(error.length > 0) {%>
+            <p class="error"><%= error %> </p>
+          <% } %>
+  
+          <div class="inputbox">
+            <ion-icon name="mail-outline" role="img" class="md hydrated"></ion-icon>
+            <input type="text" name="username" id="" required="">
+            <label for="">Username:</label>
+          </div>
+  
+          <div class="inputbox">
+            <ion-icon name="lock-closed-outline" role="img" class="md hydrated"></ion-icon>
+            <input type="password" name="password" id="" required="">
+            <label for="">Password:</label>
+          </div>
+  
+          <div class="forget">
+            <label for="">
+              <input type="checkbox">Remember me
+            </label>
+          </div>
+          <input type="submit" class="button" value="Log In">
+  
+  
+          <div class="register">
+            <p>Don't have an account ? <a href="/signup">Sign Up</a></p>
+          </div>
+        </form>
+  
+      </div>
+    
+      <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+      <script nomodule="" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+  
+    
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $('.dayNight input').change(function () {
+        $('body').toggleClass('day', $(this).is(':checked'))
+      });
+    </script>
+  
+  
+  
+  </body></html>
